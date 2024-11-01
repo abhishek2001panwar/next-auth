@@ -45,7 +45,7 @@ const Page = () => {
       if (!response.ok) {
         throw new Error('Failed to logout');
       }
-      router.push('/login');
+      router.push('/');
     } catch (err) {
       console.error('Error logging out:', err);
       setError('Failed to logout');
